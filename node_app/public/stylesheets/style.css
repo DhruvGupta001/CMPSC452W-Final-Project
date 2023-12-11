@@ -4,13 +4,13 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
+  background-color: #f0f0f0; /* Updated background color */
   margin: 0;
   padding-top: 60px;
 }
 
 .navbar {
-  background-color: #333;
+  background-color: #337ab7; /* Updated background color */
   color: #fff;
 }
 
@@ -20,6 +20,10 @@ body {
 
 .page {
   padding: 20px;
+  background-color: #fff; /* Updated background color */
+  border-radius: 5px;
+  margin: 20px; /* Added margin for spacing */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added box-shadow for a card-like effect */
 }
 
 .devices {
@@ -30,30 +34,30 @@ body {
 }
 
 .device {
-  width: 200px; /* Increased width to fit more content */
-  min-height: 100px; /* Increased min-height for better spacing */
+  width: 200px;
+  min-height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 10px;
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   background-color: #fff;
-  overflow: hidden; /* Ensure the content does not bleed outside the box */
+  overflow: hidden;
 }
 
 .device.connected {
-  border-left: 5px solid #28a745; /* Bootstrap success color */
+  border-left: 5px solid #28a745;
 }
 
 .device.disconnected {
-  border-left: 5px solid #dc3545; /* Bootstrap danger color */
+  border-left: 5px solid #dc3545;
 }
 
 .alias, .ip, .mac, .timestamp {
   font-size: 14px;
-  word-wrap: break-word; /* Ensures text breaks to prevent overflow */
+  word-wrap: break-word;
 }
 
 .alias {
@@ -69,10 +73,10 @@ body {
 .log_area {
   background-color: #fff;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 10px;
   height: 200px;
-  overflow-y: auto; /* Only vertical scroll */
+  overflow-y: auto;
   margin-top: 20px;
 }
 
