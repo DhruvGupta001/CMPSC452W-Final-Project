@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding-top: 60px;
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+}
+
+.navbar a.navbar-brand {
+  color: #fff;
+}
+
+.page {
+  padding: 20px;
+}
+
+.devices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.device {
+  width: 200px; /* Increased width to fit more content */
+  min-height: 100px; /* Increased min-height for better spacing */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #fff;
+  overflow: hidden; /* Ensure the content does not bleed outside the box */
+}
+
+.device.connected {
+  border-left: 5px solid #28a745; /* Bootstrap success color */
+}
+
+.device.disconnected {
+  border-left: 5px solid #dc3545; /* Bootstrap danger color */
+}
+
+.alias, .ip, .mac, .timestamp {
+  font-size: 14px;
+  word-wrap: break-word; /* Ensures text breaks to prevent overflow */
+}
+
+.alias {
+  font-weight: bold;
+  color: #333;
+}
+
+.mac, .timestamp {
+  font-size: 12px;
+  color: #666;
+}
+
+.log_area {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 10px;
+  height: 200px;
+  overflow-y: auto; /* Only vertical scroll */
+  margin-top: 20px;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
