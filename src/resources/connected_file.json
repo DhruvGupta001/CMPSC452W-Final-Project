@@ -1,9 +1,14 @@
 {
     "connections": [
         {
+            "MAC": "34:98:b5:6c:9c:bc",
+            "alias": "UNKNOWN_DEVICE",
+            "timestamp": "2023-12-11 20:44:15.268558"
+        },
+        {
             "MAC": "00:50:e8:0a:54:21",
             "alias": "Hotel Router",
-            "timestamp": "2023-12-11 16:30:19.305949"
+            "timestamp": "2023-12-11 20:44:27.414061"
         }
     ]
 }
